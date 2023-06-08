@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+        <!--For those with no disadvantages that are covered by antisuper genes-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+        </value>
+    </Operation>
+
+        <!--Baseliner-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Baseliner"]</xpath>
+        <value>
+            <genes>
+                <li>SuperHeroBase</li>
+            </genes>
+        </value>
+    </Operation>
+
+        <!--Dirtmole-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Dirtmole"]/genes/li[text()="MoveSpeed_Slow"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Dirtmole"]/genes/li[text()="MoveSpeed_Slow"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Dirtmole"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperSpeed</li>
+            <li>AntisuperSpeed</li>
+            <li>UnsuperPrecision</li>
+        </value>
+    </Operation>
+
+        <!--Genie-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="Delicate"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="Delicate"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="AptitudeTerrible_Social"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="AptitudeTerrible_Social"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="AptitudePoor_Animals"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Genie"]/genes/li[text()="AptitudePoor_Animals"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Genie"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperDurability</li>
+            <li>AntisuperDurability</li>
+            <li>UnsuperPersuasion</li>
+            <li>AntisuperPersuasion</li>
+            <li>UnsuperPerception</li>
+        </value>
+    </Operation>
+
+        <!--Hussar-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes/li[text()="AptitudeTerrible_Social"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes/li[text()="AptitudeTerrible_Social"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes/li[text()="AptitudeTerrible_Animals"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes/li[text()="AptitudeTerrible_Animals"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes/li[text()="ToxicEnvironmentResistance_Partial"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes/li[text()="ToxicEnvironmentResistance_Partial"]</xpath>
+            <value><li>ToxResist_Partial</li></value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Hussar"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperPersuasion</li>
+            <li>AntisuperPersuasion</li>
+            <li>UnsuperPerception</li>
+            <li>AntisuperPerception</li>
+        </value>
+    </Operation>
+
+        <!--Neanderthal-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="MoveSpeed_Slow"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="MoveSpeed_Slow"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="Learning_Slow"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="Learning_Slow"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="AptitudePoor_Social"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="AptitudePoor_Social"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="AptitudePoor_Intellectual"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes/li[text()="AptitudePoor_Intellectual"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Neanderthal"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperSpeed</li>
+            <li>AntisuperSpeed</li>
+            <li>UnsuperIntelligence</li>
+            <li>AntisuperIntelligence</li>
+            <li>UnsuperPersuasion</li>
+        </value>
+    </Operation>
+
+        <!--Pigskin-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Pigskin"]/genes/li[text()="Nearsighted"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Pigskin"]/genes/li[text()="Nearsighted"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Pigskin"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperPrecision</li>
+            <li>AntisuperPrecision</li>
+            <li>AptitudeRemarkable_Melee</li>
+        </value>
+    </Operation>
+
+        <!--Impid-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="Immunity_Weak"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="Immunity_Weak"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="WoundHealing_Slow"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="WoundHealing_Slow"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="MeleeDamage_Weak"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="MeleeDamage_Weak"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="AptitudePoor_Animals"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Impid"]/genes/li[text()="AptitudePoor_Animals"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Impid"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperHealing</li>
+            <li>AntisuperHealing</li>
+            <li>UnsuperStrength</li>
+            <li>AntisuperStrength</li>
+            <li>UnsuperPerception</li>
+        </value>
+    </Operation>
+
+        <!--Waster-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Waster"]/genes/li[text()="AptitudeTerrible_Animals"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Waster"]/genes/li[text()="AptitudeTerrible_Animals"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Waster"]/genes/li[text()="Beauty_Ugly"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Waster"]/genes/li[text()="Beauty_Ugly"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Waster"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperPersuasion</li>
+            <li>AntisuperPersuasion</li>
+            <li>UnsuperPerception</li>
+            <li>AntisuperPerception</li>
+        </value>
+    </Operation>
+
+        <!--Yttakin-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes/li[text()="WoundHealing_Slow"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes/li[text()="WoundHealing_Slow"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperHealing</li>
+            <li>AntisuperHealing</li>
+        </value>
+    </Operation>
+
+        <!--Highmate-->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/XenotypeDef[defName="Highmate"]/genes/li[text()="Delicate"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/XenotypeDef[defName="Highmate"]/genes/li[text()="Delicate"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
+        <value>
+            <li>SuperHeroBase</li>
+            <li>UnsuperDurability</li>
+            <li>AntisuperDurability</li>
+        </value>
+    </Operation>
+</Patch>

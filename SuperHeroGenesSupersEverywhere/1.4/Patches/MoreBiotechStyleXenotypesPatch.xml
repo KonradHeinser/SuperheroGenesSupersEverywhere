@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+                <!--For those with no disadvantages that are covered by antisuper genes-->
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Damphir" or defName="MBSXT_Viperal" or defName="MBSXT_Battleborne"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                </value>
+            </li>
+
+                <!--Artifexian-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes/li[text()="Nearsighted"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes/li[text()="Nearsighted"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes/li[text()="MoveSpeed_Slow"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes/li[text()="MoveSpeed_Slow"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Artifexian"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperPrecision</li>
+                    <li>AntisuperPrecision</li>
+                    <li>UnsuperSpeed</li>
+                    <li>AntisuperSpeed</li>
+                    <li>AptitudeStrong_Melee</li>
+                </value>
+            </li>
+
+                <!--Felionkin-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Felionkin"]/genes/li[text()="Delicate"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Felionkin"]/genes/li[text()="Delicate"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Felionkin"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperDurability</li>
+                    <li>AntisuperDurability</li>
+                </value>
+            </li>
+
+                <!--Canuskin-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes/li[text()="AptitudePoor_Intellectual"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes/li[text()="AptitudePoor_Intellectual"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes/li[text()="Nearsighted"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes/li[text()="Nearsighted"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Canuskin"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperIntelligence</li>
+                    <li>AntisuperIntelligence</li>
+                    <li>Learning_Fast</li>
+                    <li>UnsuperPrecision</li>
+                    <li>AntisuperPrecision</li>
+                </value>
+            </li>
+
+                <!--Toxinborn-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="WoundHealing_Slow"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="WoundHealing_Slow"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="Delicate"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="Delicate"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="AptitudeTerrible_Melee"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="AptitudeTerrible_Melee"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="Pain_Extra"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes/li[text()="Pain_Extra"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Toxinborn"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperHealing</li>
+                    <li>UnsuperDurability</li>
+                    <li>AntisuperDurability</li>
+                    <li>UnsuperPrecision</li>
+                    <li>AntisuperPrecision</li>
+                    <li>AptitudePoor_Shooting</li>
+                    <li>UnsuperStrength</li>
+                </value>
+            </li>
+
+                <!--Reaver-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="AptitudeTerrible_Intellectual"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="AptitudeTerrible_Intellectual"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="Learning_Slow"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="Learning_Slow"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="AptitudePoor_Animals"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="AptitudePoor_Animals"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="AptitudeTerrible_Social"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes/li[text()="AptitudeTerrible_Social"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Reaver"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperIntelligence</li>
+                    <li>AntisuperIntelligence</li>
+                    <li>UnsuperPerception</li>
+                    <li>UnsuperPersuasion</li>
+                    <li>AntisuperPersuasion</li>
+                </value>
+            </li>
+
+                <!--Harmonite-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="AptitudeTerrible_Melee"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="AptitudeTerrible_Melee"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="MeleeDamage_Weak"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="MeleeDamage_Weak"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="Nearsighted"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="Nearsighted"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="MinTemp_SmallIncrease"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="MinTemp_SmallIncrease"]</xpath>
+                </match>
+            </li>
+
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="AptitudeStrong_Social"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes/li[text()="AptitudeStrong_Social"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Harmonite"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperStrength</li>
+                    <li>AntisuperStrength</li>
+                    <li>UnsuperHealing</li>
+                    <li>UnsuperPrecision</li>
+                    <li>AntisuperPrecision</li>
+                    <li>AptitudeRemarkable_Social</li>
+                </value>
+            </li>
+
+                <!--Oni-->
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="Learning_Slow"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="Learning_Slow"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="Beauty_VeryUgly"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="Beauty_VeryUgly"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="AptitudeTerrible_Shooting"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="Nearsighted"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="Nearsighted"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationConditional" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="VerySleepy"]</xpath>
+                <match Class="PatchOperationRemove">
+                    <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes/li[text()="VerySleepy"]</xpath>
+                </match>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="MoreBiotechStyleXenotypes.Mod">
+                <xpath>/Defs/XenotypeDef[defName="MBSXT_Oni"]/genes</xpath>
+                <value>
+                    <li>SuperHeroBase</li>
+                    <li>UnsuperPerception</li>
+                    <li>AntisuperPerception</li>
+                    <li>UnsuperIntelligence</li>
+                    <li>AntisuperIntelligence</li>
+                    <li>UnsuperPersuasion</li>
+                    <li>AntisuperPersuasion</li>
+                    <li>Sleepy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

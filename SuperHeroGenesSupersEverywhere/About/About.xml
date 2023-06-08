@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Superhero Genes - Supers Everywhere</name>
+  <author>alite</author>
+  <packageId>SuperheroGenesSupersEverywhere.Mod</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  
+  <modDependencies>
+    <li>
+      <packageId>ludeon.rimworld.biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+    <li>
+      <packageId>SuperheroGenesBase.Mod</packageId>
+      <displayName>Superhero Genes - Base</displayName>
+      <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2980061828</downloadUrl>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>SuperheroGenesBase.Mod</li>
+    <li>MoreBiotechStyleXenotypes.Mod</li>
+    <li>SuperheroGenesVillainsAndStereotypes.Mod</li>
+  </loadAfter>
+
+  <description>
+A wise man once said "If everyone is super, nobody will be". Now that I think about it, I think he wore a cape so he couldn't have been that wise. I digress. Where [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2980131746]Superhero Genes - Villains and Stereotypes[/url] allows you to find super genes throughout the world through a few new xenotypes, this mod adds a few anti-super genes to the xenotypes that already exist. This means that they will gain most of the overall bonuses granted by the superhero gene, but their innate weaknesses will become much stronger. They may lose bad aptitudes and various penalizing genes, but they end up with unsuper and antisuper genes in their place.
+
+Some Xenotypes, like Baseliners, only gain the base superhero gene, but most of the xenotypes add more than just the base gene. In addition to adding anti-super genes to a xenotype's gene list, it also removes the related negative genes(i.e. Dirtmoles gain Anti-super speed, and lose their slow speed gene). This turns them into weaker supers. While they may still have issues fighting against the full fledged combative supers added by Villains, they can now close that gap some by using their new talents to accomplish things that they may not have been able to do otherwise.
+
+
+For those who have [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2977454722]More Biotech Style Xenotypes[/url], those ones also gain super genes through this mod.
+
+If you are using [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2980131746]Superhero Genes - Villains and Stereotypes[/url], you will find that villains arrive sooner than before, and the combat focused ones will wait less time to show up.
+
+
+[url=https://discord.gg/fYP8qkcNDh]Discord link[/url] for those who want an easier way to ask questions, make requests, or just chat. I'll also be posting new releases there.
+
+[url=https://steamcommunity.com/id/alite/myworkshopfiles/?appid=294100]Easy link to all of my Rimworld mods[/url]
+
+[url=https://github.com/KonradHeinser/SuperheroGenesSupersEverywhere][img]https://i.imgur.com/kTkpTOE.png[/img][/url]
+[url=https://ko-fi.com/alite56114][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
+  </description>
+</ModMetaData>
+
